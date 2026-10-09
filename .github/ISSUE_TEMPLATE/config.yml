@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: License, billing or private question
+    url: mailto:support@jr-devtools.com
+    about: Email support@jr-devtools.com for licenses, invoices, refunds or anything you don't want to post publicly.
+  - name: Security issue
+    url: https://jr-devtools.com/security/
+    about: Please report security issues privately, not as a public issue.
+  - name: Support policy and FAQ
+    url: https://jr-devtools.com/support/
+    about: Common questions about installing and licensing the extensions.

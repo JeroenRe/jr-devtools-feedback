@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest an improvement or a new feature.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a new request, search the existing issues and add a 👍 to one that matches.
+        This issue is **public**: don't include organization names or confidential details.
+  - type: dropdown
+    id: extension
+    attributes:
+      label: Extension
+      options:
+        - Merge Conflict Resolver
+        - Bulk Editor
+        - New extension idea
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the problem or workflow, not only the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like the extension to do?

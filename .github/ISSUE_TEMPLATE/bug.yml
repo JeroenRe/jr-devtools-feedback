@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in Merge Conflict Resolver or Bulk Editor doesn't work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is **public**. Don't include organization, project or repository names, source code, work item
+        content, license keys or tokens. For private details, email support@jr-devtools.com and mention this issue.
+  - type: dropdown
+    id: extension
+    attributes:
+      label: Extension
+      options:
+        - Merge Conflict Resolver
+        - Bulk Editor
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: Shown in Organization settings → Extensions.
+      placeholder: e.g. 1.1.1
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      placeholder: e.g. Edge 129 on Windows 11
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a pull request with a conflict in ...
+        2. Click ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Browser console errors (optional)
+      description: F12 → Console. Remove anything that identifies your organization.
+      render: text
